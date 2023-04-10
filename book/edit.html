@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update book information</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+<a href="list.html">Back to list Book</a>
+<h1>Update Book</h1>
+<form id="edit-book">
+    <table>
+        <input type="hidden" name="id" id="id"/>
+        <tr>
+            <td>Book code:</td>
+            <td><label for="book_code"></label><input type="text" id="book_code" placeholder="book_code"></td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><label for="name"></label><input type="text" id="name" placeholder="name"></td>
+        </tr>
+        <tr>
+            <td>Author:</td>
+            <td><label for="author"></label><input type="text" id="author" placeholder="author"></td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td><label for="price"></label><input type="text" id="price" placeholder="price"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Update" onclick="updateById()"></td>
+        </tr>
+    </table>
+</form>
+<script src="books.js"></script>
+</body>
+</html>

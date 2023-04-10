@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Books List</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<a href="create.html">Create new book</a>
+<h1>Books List</h1>
+<div id="searchBook">
+    <label for="search"></label>
+    <input type="search" placeholder="Enter from the search" id="search" name="search">
+    <button type="button" onclick="searchBooks()">Search</button>
+</div>
+<br>
+<table>
+    <thead>
+    <tr>
+        <th>Book code</th>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Price</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="content">
+    </tbody>
+    <tfoot id="total"></tfoot>
+</table>
+<script src="books.js"></script>
+</body>
+</html>
